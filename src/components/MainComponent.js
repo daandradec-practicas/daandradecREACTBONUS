@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Alert } from 'reactstrap';
-import Welcome from './Welcome.js';
 import { Navbar, Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
