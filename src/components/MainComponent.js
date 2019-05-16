@@ -12,8 +12,13 @@ class MainComponent extends Component {
   render(){
     return (
       <div>
-          <Alert color="success"><h1>This is the main page :D</h1></Alert>
-          <Welcome/>
+          <Alert color="success">
+          <div style={{'text-align':'center'}}>
+            <h1>Welcome to POSTER.IO</h1>
+          </div>
+          </Alert>
+          <br/>
+          <Welcome buttonLabel="click me if you can"/>
       </div>
     );
   }

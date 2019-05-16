@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
-import BackEndpoints from '../constants/BackEndpoints.js';
 import {Alert} from 'reactstrap';
 
 class PostCreate extends Component {
-    constructor(props){
-        super(props)
-    }
     
     render(){
     return (

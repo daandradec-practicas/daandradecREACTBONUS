@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import BackEndpoints from '../constants/BackEndpoints.js';
+import BackEndpoints from '../../constants/BackEndpoints.js';
 import {ListGroupItem, ListGroup, Alert} from 'reactstrap';
 
 class PostList extends Component {
@@ -10,7 +10,7 @@ class PostList extends Component {
     }
     
     componentDidMount(){
-        axios.get(BackEndpoints.POSTS.list).then(response => {
+        axios.get(BackEndpoints.POSTS.index).then(response => {
             console.log(response.data)
             this.setState({posts : response.data});
         });

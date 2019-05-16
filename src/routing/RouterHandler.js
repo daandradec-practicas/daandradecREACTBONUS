@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import PostList from '../components/PostList.js';
-import PostCreate from '../components/PostCreate.js';
+import PostList from '../components/posts/PostList.js';
+import PostCreate from '../components/posts/PostCreate.js';
 import Welcome from '../components/Welcome.js';
 import { Route } from "react-router-dom";
 
