@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import { Navbar, Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
 class Welcome extends Component {
     
@@ -21,18 +20,9 @@ class Welcome extends Component {
     render(){
     return (
         <div>
-            <div>
-                <Navbar color="light" light expand="md">
-                <Button outline color="warning">
-                    <NavLink to="/post"><h3> Principal </h3></NavLink>
-                </Button>
-                <Button outline color="warning">
-                    <NavLink to="/postCreate"><h3> Create </h3></NavLink>
-                </Button>
-                </Navbar>
-            </div>
+            
             <div style={{'text-align':'center'}}>
-                <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+                <Button color="danger" onClick={this.toggle}><h3>I DARE YOU TO CLICK</h3></Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>REST REACT BONUS</ModalHeader>
                     <ModalBody>

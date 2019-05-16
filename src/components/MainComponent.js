@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Alert } from 'reactstrap';
 import Welcome from './Welcome.js';
+import { Navbar, Button } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
 
 class MainComponent extends Component {
   
@@ -17,8 +19,19 @@ class MainComponent extends Component {
             <h1>Welcome to POSTER.IO</h1>
           </div>
           </Alert>
-          <br/>
-          <Welcome buttonLabel="click me if you can"/>
+          <div>
+                <Navbar color="light" light expand="md">
+                <Button outline color="warning">
+                    <NavLink to="/welcome"><h3> Main </h3></NavLink>
+                </Button>
+                <Button outline color="warning">
+                    <NavLink to="/post"><h3> Principal </h3></NavLink>
+                </Button>
+                <Button outline color="warning">
+                    <NavLink to="/postCreate"><h3> Create </h3></NavLink>
+                </Button>
+                </Navbar>
+            </div>
       </div>
     );
   }
