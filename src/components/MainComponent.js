@@ -29,6 +29,9 @@ class MainComponent extends Component {
                 <Button outline color="warning">
                     <NavLink to="/postCreate"><h3> Create </h3></NavLink>
                 </Button>
+                <Button outline color="warning">
+                    <NavLink to="/postUpdate"><h3> Update </h3></NavLink>
+                </Button>
                 </Navbar>
             </div>
       </div>

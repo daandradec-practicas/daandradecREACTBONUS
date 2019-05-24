@@ -2,15 +2,16 @@ import React, { Component } from 'react';
 import {ListGroupItem, ListGroup, Alert} from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-class PostList extends Component {
+class PostUpdateList extends Component {
+    
     
     render(){
         return (
             <div>
-               <Alert color="info"><h1>List of post - Click to show it</h1></Alert>
+               <Alert color="info"><h1>List of post ---- Click to update it </h1></Alert>
                <ListGroup>
                {this.props.posts.map((post)=>(
-                 <Link to={`/post/${post.id}`} key={post.id}><ListGroupItem>{post.title}</ListGroupItem></Link>
+                 <Link to={`/postUpdate/${post.id}`} key={post.id}><ListGroupItem>{post.title}</ListGroupItem></Link>
                ))}
                </ListGroup>
             </div>
@@ -18,4 +19,4 @@ class PostList extends Component {
   }
 }
 
-export default PostList;
+export default PostUpdateList;
